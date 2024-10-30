@@ -1,0 +1,138 @@
+.overlay {
+    z-index: 3;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .25);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-show {
+    display: flex;
+    animation: showBlock 0.5s linear forwards;
+}
+
+@keyframes showBlock {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.form {
+    padding: 12px;
+    width: 387px;
+    height: 223px;
+    border-radius: 5px;
+    background-color: #fff;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 95%;
+        color: #444;
+    }
+
+    .close-btn {
+        line-height: 10px;
+        font-size: 32px;
+        cursor: pointer;
+    }
+
+    &__text-label {
+        position: relative;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    &__checkbox-label {
+        position: relative;
+        display: block;
+    }
+
+    &__text-input {
+        height: 34px;
+        padding: 0 12px;
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, .25);
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 120%;
+        color: #444;
+
+        &_err {
+            border: 1px solid red;
+        }
+    }
+
+    &__triggers {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__policy {
+        display: flex;
+        font-weight: 500;
+        font-size: 8px;
+        line-height: 120%;
+        color: #444;
+
+        span {
+            margin-top: 2px;
+        }
+    }
+
+    &__checkbox {
+        margin-right: 4px;
+        transition: all 0.3s;
+        @include hover-checkbox;
+
+    }
+
+    &__submit {
+        border-radius: 5px;
+        padding: 6px 20px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 167%;
+        color: #fefefe;
+        border: none;
+        background: $green-color;
+        transition: all 0.3s;
+        @include hover-blackborder;
+        @include focus-cleanoutline;
+    }
+
+    &__error {
+        position: absolute;
+        top: 35px;
+        left: 15px;
+        font-weight: 500;
+        font-size: 8px;
+        line-height: 120%;
+        color: #e44b4b;
+    }
+
+    &__checkbox-error {
+        position: absolute;
+        top: 12px;
+        left: 16px;
+        font-weight: 500;
+        font-size: 8px;
+        line-height: 120%;
+        color: #e44b4b;
+    }
+}

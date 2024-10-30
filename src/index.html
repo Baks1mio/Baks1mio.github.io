@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Rocket Business Test</title>
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="form">
+            <div class="form__wrapper">
+                <div class="form__title">Оставьте заявку</div>
+                <span class="close-btn">&times;</span>
+            </div>
+            <form>
+                <label class="form__text-label"><input class="form__text-input" placeholder="Ваше имя *" type="text"
+                        name="name"></label>
+                <label class="form__text-label"><input class="form__text-input" placeholder="Номер телефона *"
+                        type="text" name="phone"></label>
+                <div class="form__triggers">
+                    <div class="form__policy">
+                        <div class="form__checkbox-label"><input class="form__checkbox" type="checkbox"></div>
+                        <span>Я соглашаюсь на обработку персональных данных</span>
+                    </div>
+                    <button class="form__submit" type="submit">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <section class="promo">
+        <div class="container">
+            <div class="promo__wrapper">
+                <img src="img/promo.png" alt="promo-image" class="promo__img">
+                <a href="#" class="promo__link">
+                    <div>
+                        Смотреть видео
+                        <img src="icons/play.svg" alt="play-icon">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="catalog">
+        <div class="container">
+            <div class="catalog__wrapper">
+
+                <div id="peas" class="catalog__item horizontal vertical">
+                    <img src="img/peas_bg.png" alt="peas" class="catalog__item-img">
+                    <div class="catalog__item-top">
+                        <div class="catalog__item-title">Горох в стручках, 1 кг</div>
+                        <div class="catalog__item-icons">
+                            <img src="icons/heart.svg" alt="">
+                            <img src="icons/eye.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="catalog__item-bottom">
+                        <div class="catalog__item-labels">
+                            <div class="label label_yellow">Товар дня</div>
+                            <div class="label label_green">- 29%</div>
+                        </div>
+                        <div class="catalog__item-purchase">
+                            <div class="catalog__item-price">570 ₽</div>
+                            <button class="catalog__item-order">Оставить заявку</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div id="blueberry" class="catalog__item horizontal">
+                    <img src="img/blueberry_bg.png" alt="peas" class="catalog__item-img">
+                    <div class="catalog__item-top">
+                        <div class="catalog__item-title">Голубика лесная, 200 г</div>
+                        <div class="catalog__item-icons">
+                            <img src="icons/heart.svg" alt="">
+                            <img src="icons/eye.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="catalog__item-bottom">
+                        <div class="catalog__item-labels">
+                            <div class="label label_blue">Распродажа</div>
+                            <div class="label label_pink">- 31%</div>
+                        </div>
+                        <div class="catalog__item-purchase">
+                            <div class="catalog__item-price">140 ₽</div>
+                            <button class="catalog__item-order">Оставить заявку</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="popcorn" class="catalog__item catalog__item-tall vertical">
+                    <img src="img/popcorn_bg.png" alt="popcorn" class="catalog__item-img catalog__item-tall-img">
+
+                    <div class="catalog__item-top">
+                        <div class="catalog__item-labels catalog__item-tall-labels">
+                            <div class="label label_yellow">Товар дня</div>
+                            <div class="label label_green">- 29%</div>
+                        </div>
+                        <div class="catalog__item-icons">
+                            <img src="icons/heart.svg" alt="">
+                            <img src="icons/eye.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="catalog__item-tall-bottom">
+                        <div class="catalog__item-tall-title">Попкорн солёный, для СВЧ-печи, 120 г</div>
+                        <div class="catalog__item-purchase catalog__item-tall-purchase">
+                            <div class="catalog__item-price catalog__item-tall-price">160 ₽</div>
+                            <button class="catalog__item-order catalog__item-tall-order">Оставить заявку</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="icecream" class="catalog__item catalog__item-tall vertical">
+                    <img src="img/icecream_bg.png" alt="popcorn" class="catalog__item-img catalog__item-tall-img">
+
+                    <div class="catalog__item-top">
+                        <div class="catalog__item-labels catalog__item-tall-labels">
+                            <div class="label label_purple">Хит</div>
+                        </div>
+                        <div class="catalog__item-icons">
+                            <img src="icons/heart.svg" alt="">
+                            <img src="icons/eye.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="catalog__item-tall-bottom">
+                        <div class="catalog__item-tall-title">Эскимо с малиной, 150 г</div>
+                        <div class="catalog__item-purchase catalog__item-tall-purchase">
+                            <div class="catalog__item-price catalog__item-tall-price">190 ₽</div>
+                            <button class="catalog__item-order catalog__item-tall-order">Оставить заявку</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="carrot" class="catalog__item horizontal">
+                    <img src="img/carrot_bg.png" alt="peas" class="catalog__item-img">
+                    <div class="catalog__item-top">
+                        <div class="catalog__item-title">Морковь мытая, 1 кг</div>
+                        <div class="catalog__item-icons">
+                            <img src="icons/heart.svg" alt="">
+                            <img src="icons/eye.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="catalog__item-bottom">
+                        <div class="catalog__item-labels">
+                            <div class="label label_purple">Хит</div>
+                        </div>
+                        <div class="catalog__item-purchase">
+                            <div class="catalog__item-price">140 ₽</div>
+                            <button class="catalog__item-order">Оставить заявку</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="catalog__item catalog__item-tall vertical">
+                            <img src="img/popcorn_bg.png" alt="popcorn"
+                                class="catalog__item-img catalog__item-tall-img">
+
+                            <div class="catalog__item-top">
+                                <div class="catalog__item-labels catalog__item-tall-labels">
+                                    <div class="label label_yellow">Товар дня</div>
+                                    <div class="label label_green">- 29%</div>
+                                </div>
+                                <div class="catalog__item-icons">
+                                    <img src="icons/heart.svg" alt="">
+                                    <img src="icons/eye.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="catalog__item-tall-bottom">
+                                <div class="catalog__item-tall-title">Попкорн солёный, для СВЧ-печи, 120 г</div>
+                                <div class="catalog__item-purchase catalog__item-tall-purchase">
+                                    <div class="catalog__item-price catalog__item-tall-price">160 ₽</div>
+                                    <button class="catalog__item-order catalog__item-tall-order">Оставить
+                                        заявку</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="catalog__item catalog__item-tall vertical">
+                            <img src="img/icecream_bg.png" alt="popcorn"
+                                class="catalog__item-img catalog__item-tall-img">
+
+                            <div class="catalog__item-top">
+                                <div class="catalog__item-labels catalog__item-tall-labels">
+                                    <div class="label label_purple">Хит</div>
+                                </div>
+                                <div class="catalog__item-icons">
+                                    <img src="icons/heart.svg" alt="">
+                                    <img src="icons/eye.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="catalog__item-tall-bottom">
+                                <div class="catalog__item-tall-title">Эскимо с малиной, 150 г</div>
+                                <div class="catalog__item-purchase catalog__item-tall-purchase">
+                                    <div class="catalog__item-price catalog__item-tall-price">190 ₽</div>
+                                    <button class="catalog__item-order catalog__item-tall-order">Оставить
+                                        заявку</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+
+</html>

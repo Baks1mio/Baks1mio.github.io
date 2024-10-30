@@ -1,0 +1,148 @@
+.catalog {
+    background-color: #f2f2f2;
+    padding: 64px 120px;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, minmax(154px, auto));
+        grid-auto-rows: 154px;
+        gap: 20px;
+
+        .horizontal {
+            grid-column: span 2;
+
+        }
+
+        .vertical {
+            grid-row: span 2;
+        }
+    }
+
+    // Первый вариант карточек
+    &__item {
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        border-radius: 5px;
+        background-color: #fff;
+
+        &-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            z-index: 0;
+        }
+
+        &-top {
+            display: flex;
+            z-index: 1;
+            justify-content: space-between;
+        }
+
+        &-bottom {
+            display: flex;
+            z-index: 1;
+            justify-content: space-between;
+            align-items: end;
+        }
+
+
+        &-title {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 95%;
+            color: #fff;
+        }
+
+        &-icons {
+            img {
+                display: block;
+                margin-bottom: 8px;
+            }
+        }
+
+        &-labels {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: start;
+        }
+
+        &-purchase {
+            display: flex;
+            align-items: center;
+        }
+
+        &-price {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 100%;
+            text-align: center;
+            color: #fff;
+        }
+
+        &-order {
+            border-radius: 5px;
+            margin-left: 8px;
+            padding: 6px 20px;
+            height: 32px;
+            background-color: $green-color;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 167%;
+            color: #fefefe;
+            border: none;
+            outline: none;
+            text-decoration: none;
+            transition: all 0.3s;
+            @include hover-blackborder;
+            @include focus-cleanoutline;
+        }
+    }
+
+
+    // Второй вариант карточек (высоких)
+    &__item-tall {
+        padding: 12px;
+
+        &-img {
+            max-height: 181px;
+        }
+
+        &-labels {
+            flex-direction: column;
+
+            .label {
+                margin: 0 0 4px 0;
+            }
+        }
+
+        &-title {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 120%;
+            color: #444;
+            margin-bottom: 27px;
+        }
+
+        &-purchase {
+            flex-direction: column;
+        }
+
+        &-price {
+            color: #444;
+        }
+
+        &-order {
+            margin: 8px 0 0 0;
+        }
+
+
+    }
+}

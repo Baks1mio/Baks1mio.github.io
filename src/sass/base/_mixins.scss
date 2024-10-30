@@ -1,0 +1,17 @@
+@mixin hover-blackborder {
+    &:hover {
+        box-shadow: 3px 3px 10px #000;
+    }
+}
+
+@mixin hover-checkbox {
+    &:hover {
+        box-shadow: 0.5px 0.5px 10px #b1b1b1;
+    }
+}
+
+@mixin focus-cleanoutline {
+    &:focus {
+        outline: none;
+    }
+}

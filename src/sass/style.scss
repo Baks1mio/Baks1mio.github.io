@@ -1,0 +1,23 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import 'base/mixins';
+@import 'base/variables';
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+@import 'blocks/promo';
+@import 'blocks/catalog';
+@import 'blocks/labels';
+@import 'blocks/form';
+@import 'blocks/slider';
+
+@import 'base/media';

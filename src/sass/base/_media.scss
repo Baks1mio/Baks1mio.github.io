@@ -1,0 +1,119 @@
+@media (max-width: 1439px) {
+
+    #peas {
+        grid-area: peas;
+    }
+
+    #blueberry {
+        grid-area: blueberry;
+    }
+
+    #popcorn {
+        grid-area: popcorn;
+    }
+
+    #icecream {
+        grid-area: icecream;
+    }
+
+    #carrot {
+        grid-area: carrot;
+    }
+
+    .container {
+        max-width: 784px;
+    }
+
+    .catalog {
+        &__wrapper {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, minmax(154px, auto));
+            grid-template-areas:
+                'peas peas popcorn icecream'
+                'peas peas popcorn icecream'
+                'blueberry blueberry carrot carrot';
+        }
+    }
+
+}
+
+
+
+@media (max-width: 1023px) {
+
+    .container {
+        overflow: hidden;
+    }
+
+    .catalog {
+        padding: 48px 16px;
+    }
+
+    .promo {
+        padding: 48px 16px;
+
+        &__img {
+            min-height: 204px;
+        }
+    }
+
+    .container {
+        max-width: 328px;
+    }
+
+    .catalog {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, minmax(175px, auto));
+            grid-template-areas:
+                'peas'
+                'peas'
+                'blueberry'
+                'carrot';
+
+
+        }
+
+        &__item {
+            &-bottom {
+                display: block;
+            }
+
+            &-labels {
+                position: absolute;
+                top: 38px;
+                flex-direction: row;
+            }
+
+            &-purchase {
+                flex-direction: column;
+            }
+
+            &-order {
+                width: 100%;
+                margin-top: 8px;
+            }
+        }
+
+        &__item-tall {
+            &-labels {
+                position: static;
+                flex-direction: column;
+            }
+        }
+
+        #popcorn {
+            display: none;
+        }
+
+        #icecream {
+            display: none;
+        }
+
+        .swiper {
+            display: block;
+        }
+    }
+
+
+}

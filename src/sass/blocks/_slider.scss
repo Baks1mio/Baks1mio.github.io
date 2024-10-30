@@ -1,0 +1,40 @@
+.swiper {
+    width: 328px;
+    height: 450px;
+    display: none;
+    margin-top: 20px;
+
+    &-slide {
+        width: 100%;
+        opacity: 0.5;
+
+        .catalog__item-tall {
+            width: 230px;
+            height: 410px;
+
+            &-img {
+                max-height: 230px;
+            }
+
+            &-title {
+                margin-bottom: 40px;
+            }
+
+        }
+
+        &-active {
+            opacity: 1;
+        }
+
+    }
+
+    &-pagination {
+        &-bullet {
+
+            &-active {
+                background: #000;
+            }
+        }
+    }
+
+}
