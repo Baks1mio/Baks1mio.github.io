@@ -1,6 +1,0 @@
-document.DOMContentLoaded(() => {
-
-
-
-
-});
