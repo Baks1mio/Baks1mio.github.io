@@ -124,11 +124,13 @@
         }
 
         &-title {
+            position: absolute;
+            top: 195px;
+            padding-right: 12px;
             font-weight: 600;
             font-size: 14px;
             line-height: 120%;
             color: #444;
-            margin-bottom: 27px;
         }
 
         &-purchase {

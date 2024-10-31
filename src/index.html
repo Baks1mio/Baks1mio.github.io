@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="overlay">
+    <div data-overlay="form" class="overlay">
         <div class="form">
             <div class="form__wrapper">
                 <div class="form__title">Оставьте заявку</div>
@@ -33,22 +33,30 @@
     </div>
 
 
+    <div data-overlay="video" class="overlay">
+        <div class="video">
+            <div class="video__wrapper">
+                <iframe src="https://rutube.ru/play/embed/f699cd0be4eeb6aaf927a30f1dd6b992/" frameBorder="0"
+                    allow="clipboard-write;" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </div>
+
+        </div>
+    </div>
+
 
     <section class="promo">
         <div class="container">
             <div class="promo__wrapper">
                 <img src="img/promo.png" alt="promo-image" class="promo__img">
-                <a href="#" class="promo__link">
+                <div class="promo__link">
                     <div>
                         Смотреть видео
                         <img src="icons/play.svg" alt="play-icon">
                     </div>
-                </a>
+                </div>
             </div>
         </div>
     </section>
-
-
 
 
     <section class="catalog">
@@ -60,8 +68,8 @@
                     <div class="catalog__item-top">
                         <div class="catalog__item-title">Горох в стручках, 1 кг</div>
                         <div class="catalog__item-icons">
-                            <img src="icons/heart.svg" alt="">
-                            <img src="icons/eye.svg" alt="">
+                            <img class="icon__heart" src="icons/heart.svg" alt="">
+                            <img class="icon__eye" src="icons/eye.svg" alt="">
                         </div>
                     </div>
                     <div class="catalog__item-bottom">
@@ -76,17 +84,13 @@
                     </div>
                 </div>
 
-
-
-
-
                 <div id="blueberry" class="catalog__item horizontal">
                     <img src="img/blueberry_bg.png" alt="peas" class="catalog__item-img">
                     <div class="catalog__item-top">
                         <div class="catalog__item-title">Голубика лесная, 200 г</div>
                         <div class="catalog__item-icons">
-                            <img src="icons/heart.svg" alt="">
-                            <img src="icons/eye.svg" alt="">
+                            <img class="icon__heart" src="icons/heart.svg" alt="">
+                            <img class="icon__eye" src="icons/eye.svg" alt="">
                         </div>
                     </div>
                     <div class="catalog__item-bottom">
@@ -104,19 +108,18 @@
 
                 <div id="popcorn" class="catalog__item catalog__item-tall vertical">
                     <img src="img/popcorn_bg.png" alt="popcorn" class="catalog__item-img catalog__item-tall-img">
-
                     <div class="catalog__item-top">
                         <div class="catalog__item-labels catalog__item-tall-labels">
                             <div class="label label_yellow">Товар дня</div>
                             <div class="label label_green">- 29%</div>
                         </div>
                         <div class="catalog__item-icons">
-                            <img src="icons/heart.svg" alt="">
-                            <img src="icons/eye.svg" alt="">
+                            <img class="icon__heart" src="icons/heart.svg" alt="">
+                            <img class="icon__eye" src="icons/eye.svg" alt="">
                         </div>
                     </div>
+                    <div class="catalog__item-tall-title">Попкорн солёный, для СВЧ-печи, 120 г</div>
                     <div class="catalog__item-tall-bottom">
-                        <div class="catalog__item-tall-title">Попкорн солёный, для СВЧ-печи, 120 г</div>
                         <div class="catalog__item-purchase catalog__item-tall-purchase">
                             <div class="catalog__item-price catalog__item-tall-price">160 ₽</div>
                             <button class="catalog__item-order catalog__item-tall-order">Оставить заявку</button>
@@ -127,18 +130,17 @@
 
                 <div id="icecream" class="catalog__item catalog__item-tall vertical">
                     <img src="img/icecream_bg.png" alt="popcorn" class="catalog__item-img catalog__item-tall-img">
-
                     <div class="catalog__item-top">
                         <div class="catalog__item-labels catalog__item-tall-labels">
                             <div class="label label_purple">Хит</div>
                         </div>
                         <div class="catalog__item-icons">
-                            <img src="icons/heart.svg" alt="">
-                            <img src="icons/eye.svg" alt="">
+                            <img class="icon__heart" src="icons/heart.svg" alt="">
+                            <img class="icon__eye" src="icons/eye.svg" alt="">
                         </div>
                     </div>
+                    <div class="catalog__item-tall-title">Эскимо с малиной, 150 г</div>
                     <div class="catalog__item-tall-bottom">
-                        <div class="catalog__item-tall-title">Эскимо с малиной, 150 г</div>
                         <div class="catalog__item-purchase catalog__item-tall-purchase">
                             <div class="catalog__item-price catalog__item-tall-price">190 ₽</div>
                             <button class="catalog__item-order catalog__item-tall-order">Оставить заявку</button>
@@ -152,8 +154,8 @@
                     <div class="catalog__item-top">
                         <div class="catalog__item-title">Морковь мытая, 1 кг</div>
                         <div class="catalog__item-icons">
-                            <img src="icons/heart.svg" alt="">
-                            <img src="icons/eye.svg" alt="">
+                            <img class="icon__heart" src="icons/heart.svg" alt="">
+                            <img class="icon__eye" src="icons/eye.svg" alt="">
                         </div>
                     </div>
                     <div class="catalog__item-bottom">
@@ -166,9 +168,7 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
 
             <div class="swiper">
                 <div class="swiper-wrapper">
@@ -183,8 +183,8 @@
                                     <div class="label label_green">- 29%</div>
                                 </div>
                                 <div class="catalog__item-icons">
-                                    <img src="icons/heart.svg" alt="">
-                                    <img src="icons/eye.svg" alt="">
+                                    <img class="icon__heart" src="icons/heart.svg" alt="">
+                                    <img class="icon__eye" src="icons/eye.svg" alt="">
                                 </div>
                             </div>
                             <div class="catalog__item-tall-bottom">
@@ -207,8 +207,8 @@
                                     <div class="label label_purple">Хит</div>
                                 </div>
                                 <div class="catalog__item-icons">
-                                    <img src="icons/heart.svg" alt="">
-                                    <img src="icons/eye.svg" alt="">
+                                    <img class="icon__heart" src="icons/heart.svg" alt="">
+                                    <img class="icon__eye" src="icons/eye.svg" alt="">
                                 </div>
                             </div>
                             <div class="catalog__item-tall-bottom">
@@ -223,20 +223,12 @@
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
-
             </div>
-
-
-
         </div>
-
-
-
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
-    <script src="js/form.js"></script>
-    <script src="js/slider.js"></script>
+    <script type="module" src="js/index.js"></script>
 </body>
 
 </html>

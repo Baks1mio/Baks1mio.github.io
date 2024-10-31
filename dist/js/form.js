@@ -1,4 +1,5 @@
-addEventListener('DOMContentLoaded', () => {
+'use strict';
+const ModuleForm = () => {
 
     // Валидация формы
 
@@ -81,7 +82,7 @@ addEventListener('DOMContentLoaded', () => {
 
     // Открытие-закрытие формы
 
-    const overlay = document.querySelector('.overlay'),
+    const overlay = document.querySelector('[data-overlay="form"]'),
         orderButtons = document.querySelectorAll('.catalog__item-order'),
         closeButton = document.querySelector('.close-btn');
 
@@ -101,5 +102,7 @@ addEventListener('DOMContentLoaded', () => {
         }
     });
 
+};
 
-});
+export default ModuleForm;
+

@@ -1,29 +1,3 @@
-.overlay {
-    z-index: 3;
-    position: fixed;
-    background-color: rgba(0, 0, 0, .25);
-    width: 100%;
-    height: 100vh;
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-
-.overlay-show {
-    display: flex;
-    animation: showBlock 0.5s linear forwards;
-}
-
-@keyframes showBlock {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 .form {
     padding: 12px;
     width: 387px;
@@ -45,6 +19,8 @@
     }
 
     .close-btn {
+        overflow: hidden;
+        height: 15px;
         line-height: 10px;
         font-size: 32px;
         cursor: pointer;

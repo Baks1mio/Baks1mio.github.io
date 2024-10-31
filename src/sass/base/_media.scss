@@ -35,6 +35,15 @@
         }
     }
 
+    .video {
+        &__wrapper {
+            iframe {
+                width: 550px;
+                height: 350px;
+            }
+        }
+    }
+
 }
 
 
@@ -112,6 +121,15 @@
 
         .swiper {
             display: block;
+        }
+    }
+
+    .video {
+        &__wrapper {
+            iframe {
+                width: 340px;
+                height: 220px;
+            }
         }
     }
 

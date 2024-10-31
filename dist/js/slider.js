@@ -1,4 +1,5 @@
-addEventListener('DOMContentLoaded', () => {
+'use strict';
+const ModuleSlider = () => {
 
     const swiper = new Swiper('.swiper', {
         // Optional parameters
@@ -12,4 +13,6 @@ addEventListener('DOMContentLoaded', () => {
             el: '.swiper-pagination',
         }
     });
-});
+};
+
+export default ModuleSlider;
