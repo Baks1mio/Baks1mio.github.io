@@ -8,7 +8,10 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 10px;
     }
+
+    form {}
 
     &__title {
         margin-bottom: 24px;
@@ -22,7 +25,8 @@
         overflow: hidden;
         height: 15px;
         line-height: 10px;
-        font-size: 32px;
+        font-size: 28px;
+        color: #444444;
         cursor: pointer;
     }
 
@@ -57,6 +61,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-top: 6px;
     }
 
     &__policy {
@@ -67,12 +72,13 @@
         color: #444;
 
         span {
-            margin-top: 2px;
+            margin-top: 2.5px;
         }
     }
 
     &__checkbox {
         margin-right: 4px;
+        transform: scale(0.6);
         transition: all 0.3s;
         @include hover-checkbox;
 
