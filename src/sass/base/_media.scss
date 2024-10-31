@@ -91,7 +91,11 @@
             &-labels {
                 position: absolute;
                 top: 38px;
-                flex-direction: row;
+                flex-direction: row-reverse;
+
+                .label {
+                    margin-right: 4px;
+                }
             }
 
             &-purchase {
